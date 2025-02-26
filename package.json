@@ -1,10 +1,13 @@
 {
+  "homepage": "https://srikarsha.github.io/portfolio",
   "name": "developer-portfolio",
   "description": "Portfolio of Abu Said",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

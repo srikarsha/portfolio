@@ -1,6 +1,6 @@
-const path = require('path')
- 
-module.exports = {
+const path = require('path');
+
+const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -23,6 +23,7 @@ module.exports = {
       },
     ],
   },
-}
+  output: 'export', // Required for static exports
+};
 
-next.config.js
+module.exports = nextConfig;
